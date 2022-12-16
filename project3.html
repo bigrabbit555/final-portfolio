@@ -5,14 +5,108 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <div id="content">
+    <div id="top"></div>
+    <div class="content">
         <h1>Iterative Design</h1>
         <h2>Context</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dignissim, nisi eu finibus facilisis, augue diam tincidunt leo, in aliquam ipsum quam in mauris. Donec eget consectetur neque. Mauris quis nunc facilisis, ullamcorper nunc eu, semper lacus. Nam quis orci et nisl malesuada tincidunt at id dolor. Maecenas ac turpis in eros laoreet aliquet vel vel velit. Aliquam erat volutpat. Nam ultricies auctor purus, eu scelerisque magna tincidunt non.</p>
-        <h2>Part 1</h2>
-        <img src="project3-full.jpg" alt="Project 3 Full">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dignissim, nisi eu finibus facilisis, augue diam tincidunt leo, in aliquam ipsum quam in mauris. Donec eget consectetur neque. Mauris quis nunc facilisis, ullamcorper nunc eu, semper lacus. Nam quis orci et nisl malesuada tincidunt at id dolor. Maecenas ac turpis in eros laoreet aliquet vel vel velit. Aliquam erat volutpat. Nam ultricies auctor purus, eu scelerisque magna tincidunt non.</p>
-        <h2>Part 2</h2>
+        <p>This group project sought to emphasize the iterative aspect of the design process, asking students not only to design an interface from the ground up but also to gather feedback about it and make improvements to it.</p>
+
+        <p>My group decided to design a web interface for 1Flow, a platform that allows developers to receive in-platform feedback on mobile and web apps. After designing our hi-fi prototype, we received user feedback from fellow students, after which we iterated on our design to make it more user-friendly and improve user experience. We submitted our prototype to <a href="http://usertesting.com" target="blank">usertesting.com</a> to receive additional feedback on our design, which we reflected on to consider what additional changes could be made for the next iteration.</p>
+
+        <p>We decided to implement a website because user testing feedback is not necessarily a service that would need to be accessed on-the-go. A website, which would more effectively display statistics, is a more intuitive platform for the company. We included what we considered to be the most essential functionalities in our mockup. Our prototypes include the ability to edit questionnaires that would be shown to the test users as well as a “User View” page so developer   s can see what their users see. We also included a “Stats” page that displays relevant statistics such as click-through rates in a graphical way along with users' answers to the questionnaire.</p>
+        <h2>Initial Sketches</h2>
+        <p>To get ideas flowing, each group member made three sketches outlining what they thought were some of the key pages and functionality for their vision of the site.</p>
+    </div>
+    <div class="multi-image extra-wide">
+        <img src="iterative-sketch1.png" style="max-height: 600px"/>
+        <img src="iterative-sketch2.png" style="max-height: 600px"/>
+        <img src="iterative-sketch3.png" style="max-height: 600px"/>
+        <img src="iterative-sketch4.png" style="max-height: 600px"/>
+        <img src="iterative-sketch5.png" style="max-height: 500px"/>
+        <img src="iterative-sketch6.png" style="max-height: 400px"/>
+        <img src="iterative-sketch7.png" style="max-height: 400px"/>
+        <img src="iterative-sketch8.png" style="max-height: 400px"/>
+    </div>
+    <br/>
+    <div class="content">
+        <h2>Low-Fidelity Prototypes with Balsamiq</h2>
+        <p>After some discussion as a group, we combined all the best parts about each person's sketches to create low-fidelity wireframes of our site using the program Balsamiq.  These would serve as the basis for site architecture and functionality, as well as the layout of the high-fidelity prototypes to come.</p>
+    </div>
+    <div class="multi-image extra-wide">
+        <div style="display:flex;flex-direction:column;">
+            <div style="display:flex;flex-direction:row;align-items:flex-start;justify-content:flex-end;">
+                <img src="iterative-lofi-homepage.png" style="max-width: 450px"/>
+                <img src="iterative-lofi-devtools.png" style="max-width: 450px"/>   
+            </div>
+            <div style="display:flex;flex-direction:row;align-items:flex-start">
+                <img src="iterative-lofi-design-view.png" style="max-width: 600px;border:1px solid black"/>
+                <img src="iterative-lofi-recipient-view.png" style="max-width: 600px"/>
+            </div>
+        </div>
+        <img src="iterative-lofi-devtools2.png" style="max-width: 450px"/>
+    </div>
+    <br/>
+    <div class="content">
+        <h2>Interactive High-Fidelity Prototype</h2>
+        <p>Group members all collaborated via Figma to construct an interactive high-fidelity prototype of our site.  The full screens and layout is shown below, and you can see the interactive version on Figma <a href="https://www.figma.com/proto/MMR5T4P3jWsVmJYMEHVy8c/1Flow?node-id=0%3A1&amp;scaling=min-zoom&amp;page-id=0%3A1&amp;starting-point-node-id=10%3A2" target="_blank">here</a>.</p>
+    </div>
+    <div class="multi-image extra-wide">
+        <img src="iterative-hifi-full.png" style="border: 1px solid black"/>
+    </div>
+    <br/>
+    <div class="content">
+        <h2>Peer Feedback</h2>
+        <p>In order to better our designs, groups had a workshop where we took turns providing critiques and constructive criticisms for other groups' projects.  Here is a summary of the critiques we received, and the change(s) we made to accommodate them:</p>
+        <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; width:90%;margin:auto">
+            <div class="table-row-2">
+                <h3>Critique/Suggestion Received</h3>
+                <h3>Change Made</h3>
+            </div>
+            <div class="table-row-2">
+                <p>The 1Flow logo should take you back to My Apps and not the login page.</p>
+                <p>Clicking on the 1Flow logo now takes you back to the My Apps page.</p>
+            </div>
+            <div class="table-row-2">
+                <p>There should be a more intuitive back button for the Edit and Stats pages than clicking My Apps again on top menu.</p>
+                <p>We added a button reading "Back to My Apps" to both the Edit and Stats pages.</p>
+            </div>
+            <div class="table-row-2">
+                <p>There should be the ability to click between views on the Stats page rather than scroll&#8212something like cards or another interactive solution.</p>
+                <p>The Stats page to now has cards that can be swiped through, and the questionnaire results are now dropdown answers so that the page is not a continuously scrolling page.</p>
+            </div>
+            <div class="table-row-2">
+                <p>There should be a disclaimer that in User View, the inputted data is not recorded as a statistic.</p>
+                <p>We moved the disclaimer from the submission page to be included in the header of each page in the User View.</p>
+            </div>
+            <div class="table-row-2">
+                <p>You should include a progress measurement of some sort for User View (e.g. "1/10" or progress bar).</p>
+                <p>We added a progress measurement indicator to the user view ("1/3").</p>
+            </div>
+            <div class="table-row-2">
+                <p>Add some sort of indicator to show that you're in User View (like a frame, making the view smaller than the screen size).</p>
+                <p>We added a large header that's clearly visible and indicates that you're in User View.</p>
+            </div>
+            <div class="table-row-2">
+                <p>Bring more emphasis to “Sign in to get started” on start page (make it a button).</p>
+                <p>We changed the text to be a large, blue button that's easy to notice.</p>
+            </div>
+        </div>
+        <h2>User Testing</h2>
+        <p>Having received feedback from peers and iterated once already, it was time to get some real-world opinions from people who weren't already familiar with the project.  As mentioned above, we did this through <a href="http://usertesting.com" target="blank">usertesting.com</a>, submitting our interactive Figma prototype with instructions to perform the following tasks: sign into the website, interact with the questionnaire settings (edit a question, add a question, delete a question), and view the statistics page and "User View" pages.</p>
+        <p>The most common error was with trying to find the "Questionnaire Edit" page—since the button was just labeled "Edit", ⅔ users felt that was confusing and weren't sure what exactly that button would have them editing. This is likely in part due to the inconsistency in labeling between the instructions and the prototype, but clarifying the express purpose of the "Edit" button can only help with clarity. Another user also recommended some kind of "instructions" page or popup that would remind a user how to use the site and what options are available to them. Based on this feedback, we could potentially add an instructions page and change the edit button to read "Edit Questionnaire".</p>
+        <p>You can see video of the users actually attempting the tasks, as well as the raw written feedback we received, at the following links:</p>
+        <ul>
+            <li><a href="https://drive.google.com/file/d/1EyCq13akywE-X6eFjXBFm4usIzpSDyGU/view?usp=sharing" target="_blank">User 1 Video</a></li>
+            <li><a href="https://drive.google.com/file/d/1k1wW-bWSzszG3lorvxOkFqeyvgK2gAOQ/view?usp=sharing" target="_blank">User 2 Video</a></li>
+            <li><a href="https://drive.google.com/file/d/1MJcPk8Vmxol-TuJc97thpN_nboPopBED/view?usp=sharing" target="_blank">User 3 Video</a></li>
+            <li><a href="https://docs.google.com/spreadsheets/d/184yceRP6Goq-8ox8ZlikGXWsMBvlsm4y/edit?usp=sharing&ouid=113161620529183032264&rtpof=true&sd=true" target="_blank">Written Feedback</a></li>
+        </ul>
+        <h2>Conclusion</h2>
+        <p>As useful as tools like personas and storyboards are for getting into the heads of users and designing effective interfaces from the getgo, it's nigh impossible to get things perfect on the first try.  This project was enlightening in that it showed me what to do when things aren't perfect: how to gather various types of feedback from various sources, and how to convert that feedback into action with regard to the interface.  Going forward I think that I'll be much more comfortable embracing imperfection with these practices under my belt, and that I'll be able to achieve more successful interface design with the iterative process.</p>
+        <div class="back-to-top">
+            <p><a href="#top">Back to top</a></p>
+            <p><a href="index.html">Back home</a></p>
+        </div>
     </div>
 </body>
 </html>

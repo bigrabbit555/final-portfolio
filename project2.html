@@ -3,16 +3,127 @@
 <head>
     <title>Responsive Redesign</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="slideshow-style.css">
+    <script type="text/javascript" src="slideshow-script.js"></script>
 </head>
 <body>
-    <div id="content">
+    <div id="top"></div>
+    <div class="content">
         <h1>Responsive Redesign</h1>
         <h2>Context</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dignissim, nisi eu finibus facilisis, augue diam tincidunt leo, in aliquam ipsum quam in mauris. Donec eget consectetur neque. Mauris quis nunc facilisis, ullamcorper nunc eu, semper lacus. Nam quis orci et nisl malesuada tincidunt at id dolor. Maecenas ac turpis in eros laoreet aliquet vel vel velit. Aliquam erat volutpat. Nam ultricies auctor purus, eu scelerisque magna tincidunt non.</p>
-        <h2>Part 1</h2>
-        <img src="project2-full.jpg" alt="Project 2 Full">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dignissim, nisi eu finibus facilisis, augue diam tincidunt leo, in aliquam ipsum quam in mauris. Donec eget consectetur neque. Mauris quis nunc facilisis, ullamcorper nunc eu, semper lacus. Nam quis orci et nisl malesuada tincidunt at id dolor. Maecenas ac turpis in eros laoreet aliquet vel vel velit. Aliquam erat volutpat. Nam ultricies auctor purus, eu scelerisque magna tincidunt non.</p>
-        <h2>Part 2</h2>
+        <p>This project sought to combine students' design skills with their technical web development skills by redesigning and improving upon an exsiting website of their choosing.  Students were asked to identity various problems with the site they chose, and emphasize the resolution of these problems (along with general principles of good design) in their redesigned site.  Particular emphasis was placed on responsiveness of the site to different screens sizes and aspect ratios.</p>
+        <h2>Choosing a Site</h2>
+        <p>I decided to redesign the <a href="https://www.gcbpvd.org/" target="_blank">Grad Center Bar website</a>.</p>
+        <img src="redesign-original.png" alt="A screenshot of the original Grad Center Bar website">
+        <p class="caption">The home page of the original Grad Center Bar website.</p>
+        <p>I chose this site because it houses relevant information for the Brown community, but its current design makes it difficult for users to find the information they're looking for at a glance.</p>
+        <h3>Usability Problems</h3>
+        <p>These are some of the usability problems I identified with the site:</p>
+        <ul>
+            <li>Text is difficult to read because it is over an image</li>
+            <li>Information is not clearly labeled/categorized
+                <ul>
+                    <li>Users need to skim the entire page to find what they are looking for</li>
+                    <li>Users may struggle to find the same information again on a return visit</li>
+                </ul>
+            </li>
+            <li>The main title and navigation menu are too small and easy to miss relative to the main content of the page</li>
+            <li>Some of the most important information, such as the hours of the bar, is tucked away at the very bottom of the site</li>
+        </ul>
+        <h3>Accessibility Problems</h3>
+        <p>The <a href="https://wave.webaim.org/" target="_blank">WAVE</a> program highlights several instances of low contrast, the greatest obvious offender of which is the white "GCB" that overlays the background image directly with no highlighting. It also draws attention to several invisible (black-on-black) and non-functional links, one of which is near the top of the page and opens a seemingly defunct checkout cart and the other of which invites the reader to "Learn more" at the bottom fo the page but has no actual functionality. These dud elements, appearing almost to be left over from previous iterations of the site, would surely confuse any screen reader.</p>
+        <h2>Visual Redesign</h2>
+        <h3>Low-Fidelity Wireframing</h3>
+        <p>The first step in the redesign was to sketch the these low-fidelity wireframes.  This helped me to brainstorm a new layout that would address the issues present in the original site while still keeping its functionality and purpose in mind.  In order to plan ahead for responsiveness, I prototyped layouts for three common screen sizes.</p>
+        <br/>
+        <div class="slideshow-outmost">
+            <!-- Slideshow code adapted from https://www.w3schools.com/howto/howto_js_slideshow.asp -->
+            <div class="slideshow-wrapper">
+
+                <div class="mySlides fade" style="display:inherit">
+                    <img src="redesign-wireframe-mobile.png" style="width:100%" alt="A sketch of a mobile website layout">
+                    <p class="caption">Mobile wireframe</p>
+                </div>
+              
+                <div class="mySlides fade">
+                    <img src="redesign-wireframe-tablet.png" style="width:100%" alt="A sketch of a tablet website layout">
+                    <p class="caption">Tablet wireframe</p>
+                </div>
+              
+                <div class="mySlides fade">
+                  <img src="redesign-wireframe-desktop.png" style="width:100%" alt="A sketch of a desktop website layout">
+                  <p class="caption">Desktop wireframe</p>
+                </div>
+              
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+              <br>
+              
+              <!-- The dots/circles -->
+              <div style="text-align:center">
+                <span class="dot active" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+              </div>
+        </div>
+        <h3>Visual Design Style Guide</h3>
+        <p>The next step was to create a visual style guide to help ensure consistency and high contrast across my high-fidelity prototypes.</p>
+        <img src="redesign-style-guide.png" style="width:70%; margin:auto" alt="A visual design style guide"/>
+        <br/>
+        <h3>High-Fidelity Prototypeing with Figma</h3>
+        <p>Then it was time to create the high-fidelity prototypes themselves using Figma.  This step allowed me to get a sense of how my design would really look without actually committing the time and effort to building it in code.  Once more, in pursuit of responsiveness, there is a different prototype for each of three common screen sizes.</p>
+        <br/>
+        <div class="slideshow-outmost">
+            <!-- Slideshow code adapted from https://www.w3schools.com/howto/howto_js_slideshow.asp -->
+            <div class="slideshow-wrapper">
+
+                <div class="mySlides1 fade" style="display:inherit">
+                    <img src="redesign-mobile-hifi.png" style="width:100%" alt="A high fidelity mockup of a mobile website layout">
+                    <p class="caption">Mobile mockup</p>
+                </div>
+              
+                <div class="mySlides1 fade">
+                    <img src="redesign-tablet-hifi.png" style="width:100%" alt="A high fidelity mockup of a tablet website layout">
+                    <p class="caption">Tablet mockup</p>
+                </div>
+              
+                <div class="mySlides1 fade">
+                  <img src="redesign-desktop-hifi.png" style="width:100%" alt="A high fidelity mockup of a desktop website layout">
+                  <p class="caption">Desktop mockup</p>
+                </div>
+              
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides1(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides1(1)">&#10095;</a>
+              </div>
+              <br>
+              
+              <!-- The dots/circles -->
+              <div style="text-align:center">
+                <span class="dot1 active" onclick="currentSlide1(1)"></span>
+                <span class="dot1" onclick="currentSlide1(2)"></span>
+                <span class="dot1" onclick="currentSlide1(3)"></span>
+              </div>
+        </div>
+        <h2>The Final Product</h2>
+        <p>Happy with how they turned out, it was finally time to convert the high-fidelity prototypes into an actual site with HTML and CSS.  No JavaScript or JS framework was needed, as this project was meant to emphasize responsiveness and not interactivity.</p>
+        <p>You can see the final product <a href="https://bigrabbit555.github.io/gcb_redesign/" target="_blank">here</a>.  I would encourage you to play around with the size of your browser window and see how the page responds.  There are also screenshots below of the site at two different aspect ratios.</p>
+        <br/>
+        <img src="redesign-new-wide.png" alt="A screenshot of the redesigned site at the dimensions of a desktop"/>
+        <p class="caption">The redesigned site at the dimensions of a desktop.</p>
+        <br/>
+        <br/>
+        <img src="redesign-new-narrow.png" alt="A screenshot of the redesigned site at the dimensions of a phone" style="width: 40%; margin: auto"/>
+        <p class="caption">The redesigned site at the dimensions of a phone.</p>
+        <h2>Conclusion</h2>
+        <p>In the actual construction of my responsively redesigned site, I found that I didn't even have to make use of many of the fancier CSS techniques I had anticipated needing. I think my decision to keep the flow of information relatively linear definitely made things easier in this regard.</p>
+        <p>With no errors, contrast errors, or alerts in WAVE and appropriate scaling for pages of different sizes, I believe that my responsive redesign is largely successful in improving both the usability and accessibility of the original site.</p>
+        <div class="back-to-top">
+            <p><a href="#top">Back to top</a></p>
+            <p><a href="index.html">Back home</a></p>
+        </div>
     </div>
 </body>
 </html>
